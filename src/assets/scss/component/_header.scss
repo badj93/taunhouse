@@ -1,0 +1,286 @@
+
+
+header{
+  background: url("../../../src/assets/images/header1920.jpg") center 0 no-repeat;
+  height: 649px;
+  @media (min-width: 501px) and (max-width: 1024px){
+    background: url("../../../src/assets/images/header1024.jpg") center 0 no-repeat;
+  }
+  @media (min-width: 0) and (max-width: 500px) {
+    background: url("../../../src/assets/images/header500.jpg") center 0 no-repeat;
+    margin-bottom: 5em;
+  }
+  .menu-block{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 17px;
+    .logo{
+      font-family: $font;
+      text-align: center;
+      background: url("../../../src/assets/images/logo.png") 0 0 no-repeat;
+      width: 180px;
+      height: 50px;
+      display: block;
+      p:nth-child(1){
+        color: #1e663a;
+        font-size: 31px;
+        font-weight: 700;
+      }
+      p:nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+      }
+      @media (min-width: 0) and (max-width: 1024px) {
+        margin-left: 15px;
+      }
+    }
+    nav{
+      margin: 0 auto;
+      position: relative;
+      left: 15px;
+      ul{
+        display: inline-flex;
+        li{
+          padding-right: 35px;
+          a{
+            color: $colorText;
+            font-family: $font;
+            font-size: 17px;
+            font-weight: 400;
+            text-decoration: none;
+            @media (min-width: 991px) and (max-width: 1120px){
+              font-size: 14px;
+            }
+          }
+        }
+        @media (min-width: 0px) and (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+    .phone-contact{
+      display: inline-flex;
+      align-items: center;
+      left: -24px;
+      position: relative;
+      @media (min-width: 0) and (max-width: 500px){
+        display: none;
+      }
+      .phone{
+        background: url("../../../src/assets/images/tel.png") center 0 no-repeat;
+        width: 35px;
+        height: 45px;
+        display: block;
+      }
+      p{
+        color: #1e663a;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 22px;
+        position: relative;
+        left: 10px;
+      }
+    }
+    @media (min-width: 0) and (max-width: 1024px){
+      justify-content: center;
+    }
+  }
+  .mobile-menu{
+    background-color: #1e663a;
+    position: absolute;
+    top: -16px;
+    z-index: 9999999;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+    .contact-phone{
+      background: url("../../../src/assets/images/contact_phone.png") 0 0 no-repeat;
+      width: 156px;
+      height: 23px;
+      display: block;
+      z-index: 999999;
+      position: absolute;
+      margin-top: -307px;
+      margin-left: -168px;
+    }
+    nav{
+      text-align: center;
+      margin-bottom: 2em;
+      margin-top: 6em;
+      width: 323px;
+      left: 0;
+      ul{
+        display: block;
+        li{
+          border-bottom: 1px solid #429361;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 0;
+          &:last-child{
+            border-bottom: none;
+          }
+          a{
+            font-size: 17px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-slider{
+  width: 100%;
+  justify-content: flex-end;
+  display: inline-flex;
+  .slider-content{
+    width: initial;
+    box-shadow: none;
+    .carousel__controls{
+      bottom: 60px;
+      background: none;
+      @media (min-width: 500px) and (max-width: 1024px) {
+        bottom: 185px;
+      }
+      @media (min-width: 0px) and (max-width: 500px) {
+        bottom: 120px;
+      }
+      .carousel__controls__item{
+        background-color: #1e663a;
+        width: 6px;
+        height: 6px;
+      }
+      .carousel__controls__item--active{
+        background-color: #1e663a;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  .desc-block{
+    background-color: #edf2ef;
+    width: 370px;
+    height: 435px;
+    position: relative;
+    top: 42px;
+    left: -15px;
+    opacity: 0.8;
+    @media (min-width: 0px) and (max-width: 1024px) {
+      background-color: #edf2ef;
+      width: 398px;
+      height: 315px;
+      position: relative;
+      left: -110px;
+      top: 190px;
+    }
+    @media (min-width: 0px) and (max-width: 630px) {
+      margin: 0 auto;
+      left: initial;
+    }
+    @media (min-width: 0) and (max-width: 500px){
+      top: 131px;
+      height: 380px;
+    }
+    h2{
+      width: 290px;
+      font-family: $font;
+      font-size: 26px;
+      color: $colorText;
+      font-weight: 700;
+      margin: 0 auto;
+      position: relative;
+      top: 40px;
+      line-height: 31px;
+      letter-spacing: -1px;
+      display: block;
+      text-transform: uppercase;
+      @media (min-width: 360px) and (max-width: 1024px) {
+        font-size: 20px;
+        width: 221px;
+        top: 20px;
+        left: 30px;
+        margin: initial;
+      }
+      @media (min-width: 0px) and (max-width: 360px) {
+        width: 221px;
+        font-size: 18px;
+        top: 20px;
+      }
+    }
+    p{
+      width: 281px;
+      color: $colorText;
+      font-size: 17px;
+      font-weight: 400;
+      font-family: $font;
+      position: relative;
+      margin: 0 auto;
+      top: 70px;
+      letter-spacing: 0;
+      line-height: 20px;
+      @media (min-width: 0px) and (max-width: 1024px) {
+        font-size: 15px;
+        width: 343px;
+        top: 30px;
+        margin: initial;
+        left: 30px;
+      }
+      @media (min-width: 0) and (max-width: 600px) {
+        width: 280px;
+      }
+    }
+  }
+}
+
+.application .theme--light.btn, .theme--light .btn{
+  color: #1e663a!important;
+}
+.application .theme--dark.btn, .theme--dark .btn{
+  color: #1e663a!important;
+}
+.btn__content{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  .hamburger-inner{
+    background-color: #1e663a;
+    &:before, &:after{
+      background-color: #1e663a;
+    }
+  }
+  @media (min-width: 0) and (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.hamburger.is-active{
+  z-index: 999999;
+  position: absolute;
+  margin-left: 295px;
+  margin-top: -300px;
+  .hamburger-inner{
+    background-color: white;
+    &:before, &:after{
+      background-color: #fff;
+    }
+  }
+}
+.mobile-menu .contact-phone{
+  &:not(*:root) {
+    margin-top: -130px;
+    margin-left: -83px;
+  }
+}
+.hamburger.is-active{
+  &:not(*:root) {
+    margin-left: 147px;
+    margin-top: -130px;
+  }
+}
+
+
+

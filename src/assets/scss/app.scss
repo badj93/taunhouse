@@ -1,0 +1,24 @@
+@import "smart-grid";
+@include reset();
+
+.container{
+  @include wrapper();
+}
+.row{
+  @include row-flex();
+}
+
+
+
+.application.theme--light{
+  background: #fff;
+}
+
+$font: 'Roboto Condensed', sans-serif;
+$colorText: #323232;
+
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "component/header";
+@import "component/home";
+@import "component/footer";
+
